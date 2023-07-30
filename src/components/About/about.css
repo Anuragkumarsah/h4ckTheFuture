@@ -1,0 +1,159 @@
+.about-section {
+  padding-top: 4rem;
+  margin: 0 5rem;
+}
+.about-subsection {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  /* margin-left: 1rem; */
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-bottom: 4rem;
+}
+
+.about-left-section {
+  flex: 1;
+  color: #dddbdb;
+}
+
+.about-heading {
+  color: #efa506;
+  font-size: 50px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.about-left-section p {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  color: #dddbdb;
+
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.about-right-section {
+  width: 450px;
+}
+
+.hackathon-image {
+  /* height: auto; */
+  width: 100%;
+  height: auto;
+  animation: imageAnimation 1s infinite alternate;
+}
+
+@media screen and (max-width: 480px) {
+  .about-sub-section {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+@keyframes imageAnimation {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 1180px) {
+  .about-section {
+    margin: 0 0rem;
+  }
+  .about-subsection {
+    flex-direction: column;
+  }
+
+  .about-right-section {
+    width: 390px;
+    margin-top: 20px;
+  }
+  .about-left-section {
+    margin: 0 4rem;
+  }
+
+  .about-left-section p {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .about-heading {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-subsection {
+    flex-direction: column;
+  }
+
+  .about-right-section {
+    width: 300px;
+  }
+
+  /* .hackathon-image {
+    max-width: 353px;
+    height: 361px;
+  } */
+
+  .about-left-section p {
+    font-size: 15px;
+  }
+
+  .about-heading {
+    text-align: center;
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .about-subsection {
+    flex-direction: column;
+  }
+
+  /* .hackathon-image {
+    max-width: 353px;
+    height: 361px;
+  } */
+
+  .about-left-section {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-left-section p {
+    font-size: 17px;
+  }
+
+  .about-heading {
+    text-align: center;
+    font-size: 44px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .about-left-section {
+    margin: 0 4rem;
+  }
+
+  .about-left-section p {
+    font-size: 20px;
+  }
+
+  .about-heading {
+    /* text-align: center; */
+    font-size: 50px;
+  }
+}
